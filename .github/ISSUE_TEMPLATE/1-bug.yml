@@ -8,7 +8,6 @@ body:
     attributes:
       value: |
         Thanks for reporting a bug! Please fill out all sections so a solution can be implemented as soon as possible.
-
   - type: textarea
     id: description
     attributes:
@@ -26,8 +25,7 @@ body:
       label: Bug Prevalence
       description: "Is this a one-time occurrence, or does it happen frequently? Have you seen this bug before and if so, how often?"
       placeholder: |
-        "e.g., The bug occurs every time I try to run the function `package::function()`.
-        I've seen this bug multiple times over the past week since updating to otis version `0.1.0`."
+        "e.g., The bug occurs every time I try to run the function package::function()."
     validations:
       required: true
 
@@ -43,38 +41,24 @@ body:
         ...
     validations:
       required: true
-
   - type: input
     id: package_version
     attributes:
       label: Package Version
       placeholder: |
-        Provide information about the package used, function, and version details.
-        e.g., `otis::get_user()` version `0.1.0`.
-
+        e.g., Otis version 0.1.0
   - type: input
     id: r_version
     attributes:
       label: R Version
       placeholder: |
-        R.version (e.g., R version 4.4.1)
-        Use the following command to get the installed R version:
-
-        > R.version$version.string
-        [1] "R version 4.4.1 (2024-06-14)"
-
+        e.g., R version 4.4.1
   - type: input
     id: os_version
     attributes:
       label: OS Version
       placeholder: |
-        Provide information about your operating system, including version details.
-        
-        Ubuntu 22.04 LTS
-        macOS Sequoia Version 15.7.1
-        macOS Tahoe Version 26.0.1
-        Windows 11 Version 23H2, Build 22631
-
+        e.g., macOS Sequoia Version 15.7.1
   - type: textarea
     id: additional
     attributes:
